@@ -1,0 +1,37 @@
+<table>
+	<thead>
+	<th>ID</th>
+    <th>Date Created</th>
+    <th>Compute Price</th>
+    <th>Currency</th>
+    <th>Total Price</th>
+    <th>Storage Price</th>
+    <th>Running Price</th>
+    <th>Account Name</th>
+    <th>Plan ID</th>
+    <th>Ref Type</th>
+    <th>Zone Name</th>
+    <th>Last Updated</th>
+    <th>User Name</th>
+	</thead>
+	<tbody>
+		{{#each main}}
+			<tr>
+				<td>{{dataMap.id}}</td>
+                <td>{{dataMap.date_created}}</td>
+                <td>{{dataMap.compute_price}}</td>
+                <td>{{dataMap.currency}}</td>
+                <td>{{dataMap.total_price}}</td>
+                <td>{{dataMap.storage_price}}</td>
+                <td>{{dataMap.running_price}}</td>
+                <td>{{dataMap.account_name}}</td>
+                <td>{{dataMap.plan_id}}</td>
+                <td>{{dataMap.ref_type}}</td>
+                <td>{{dataMap.zone_name}}</td>
+                <td>{{dataMap.last_updated}}</td>
+                <td>{{dataMap.user_name}}</td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table>
+
