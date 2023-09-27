@@ -1,0 +1,45 @@
+<table>
+	<thead>
+	<th>ID</th>
+    <th>Name</th>
+    <th>Hostname</th>
+    <th>OS Type</th>
+    <th>Server Type</th>
+    <th>Internal IP</th>
+    <th>External IP</th>
+    <th>SSH Host</th>
+    <th>Max Storage</th>
+    <th>Used Storage</th>
+    <th>Max CPU</th>
+    <th>Used CPU</th>
+    <th>Max Memory</th>
+    <th>Used Memory</th>
+    <th>Power State</th>
+    <th>Account ID</th>
+    <th>Zone ID</th>
+	</thead>
+	<tbody>
+		{{#each main}}
+			<tr>
+				<td>{{dataMap.id}}</td>
+                <td>{{dataMap.name}}</td>
+                <td>{{dataMap.hostname}}</td>
+                <td>{{dataMap.os_type}}</td>
+                <td>{{dataMap.server_type}}</td>
+                <td>{{dataMap.internal_type}}</td>
+                <td>{{dataMap.external_ip}}</td>
+                <td>{{dataMap.ssh_host}}</td>
+                <td>{{dataMap.max_storage}}</td>
+                <td>{{dataMap.used_storage}}</td>
+                <td>{{dataMap.max_cpu}}</td>
+                <td>{{dataMap.used_cpu}}</td>
+                <td>{{dataMap.max_memory}}</td>
+                <td>{{dataMap.used_memory}}</td>
+                <td>{{dataMap.power_state}}</td>
+                <td>{{dataMap.account_id}}</td>
+                <td>{{dataMap.zone_id}}</td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table>
+
