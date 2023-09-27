@@ -1,0 +1,35 @@
+<table>
+	<thead>
+	<th>ID</th>
+    <th>Code</th>
+    <th>Date Created</th>
+    <th>Last Updated</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Currency</th>
+    <th>Price Unit</th>
+    <th>Price Type</th>
+    <th>Price</th>
+    <th>Custom Price</th>
+    <th>Cost</th>
+	</thead>
+	<tbody>
+		{{#each main}}
+			<tr>
+				<td>{{dataMap.id}}</td>
+                <td>{{dataMap.code}}</td>
+                <td>{{dataMap.date_created}}</td>
+                <td>{{dataMap.last_updated}}</td>
+                <td>{{dataMap.start_date}}</td>
+                <td>{{dataMap.end_date}}</td>
+                <td>{{dataMap.currency}}</td>
+                <td>{{dataMap.price_unit}}</td>
+                <td>{{dataMap.price_type}}</td>
+                <td>{{dataMap.price}}</td>
+                <td>{{dataMap.custom_price}}</td>
+                <td>{{dataMap.cost}}</td>
+			</tr>
+		{{/each}}
+	</tbody>
+</table>
+
